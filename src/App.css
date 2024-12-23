@@ -1,0 +1,130 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Typography */
+  body {
+    font-family: 'Lora', serif;
+    color: #333;
+    background: linear-gradient(to bottom, #e7ecef, #fffdfd);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Layout */
+  header {
+    background: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #d8b9c3;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2rem 1rem;
+    background: #fdfdfd;
+    margin: 1rem auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  section p {
+    text-align: justify;
+  }
+  
+  /* Articles */
+  article {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid #b8c1b2;
+    background: #e6ebea;
+    border-radius: 4px;
+  }
+  
+  article h3 {
+    color: #444;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #eee;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  footer nav ul li a {
+    color: #d8b9c3;
+    text-decoration: none;
+  }
+  
+  footer nav ul li a:hover {
+    color: #fff;
+  }
+  
+  /* Animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
